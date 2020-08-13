@@ -23,7 +23,6 @@ const Clear = styled.div`
   z-index: 1000;
 `;
 
-
 function App() {
   const [term, setTerm] = useState("Add Something To Do");
 
@@ -40,15 +39,10 @@ function App() {
   const onFormSubmit = (e) => {
     e.preventDefault();
 
-
     if (todos.length === 0) {
-
       setTimeout(() => {
-
-        alert('tap todos to complete')
-
-      }, 300)
-      
+        alert("tap todos to complete");
+      }, 300);
     }
 
     setTodos((todos) => [
@@ -72,8 +66,6 @@ function App() {
     <div className="App">
       <Clear onClick={clearAll}>clear all</Clear>
 
-
-
       <Form
         todos={todos}
         onFormSubmit={onFormSubmit}
@@ -82,8 +74,6 @@ function App() {
       />
 
       <Progress completed={completed} todos={todos} />
-
-
 
       <Display
         setTodos={setTodos}

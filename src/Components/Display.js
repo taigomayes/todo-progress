@@ -9,7 +9,6 @@ const Todo = styled.div`
   align-items: center;
   justify-content: center;
 
-
   margin: 10px;
   transition: ease 0.5s;
   cursor: pointer;
@@ -17,10 +16,7 @@ const Todo = styled.div`
   border-radius: 10px;
   box-shadow: 10px 10px 30px #666666, -10px -10px 30px #ffffff;
 
-
-  &:hover{
-      
-
+  &:hover {
   }
 `;
 
@@ -41,8 +37,6 @@ const Delete = styled.button`
   }
 `;
 
-
-
 const Date = styled.div`
   position: absolute;
   left: 15%;
@@ -53,7 +47,7 @@ const Date = styled.div`
 const TodoContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-top:10px;
+  margin-top: 10px;
   z-index: 1000;
 `;
 
@@ -82,7 +76,7 @@ export const Display = ({ todos, setCompleted, completed, setTodos }) => {
           <TodoContainer>
             <Todo
               style={{
-                border: item.complete ? "5px solid green" : "5px solid white",
+                border: item.complete ? "5px solid #A6E1FA" : "5px solid white",
               }}
               id={item.id}
               onClick={toggleComplete}
