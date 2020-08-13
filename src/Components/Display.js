@@ -9,13 +9,19 @@ const Todo = styled.div`
   align-items: center;
   justify-content: center;
 
-  border-radius: 10px;
+
   margin: 10px;
   transition: ease 0.5s;
   cursor: pointer;
 
   border-radius: 10px;
   box-shadow: 10px 10px 30px #666666, -10px -10px 30px #ffffff;
+
+
+  &:hover{
+      
+
+  }
 `;
 
 const Delete = styled.button`

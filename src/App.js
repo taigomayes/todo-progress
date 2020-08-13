@@ -39,6 +39,18 @@ function App() {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
+
+
+    if (todos.length === 0) {
+
+      setTimeout(() => {
+
+        alert('tap todos to complete')
+
+      }, 300)
+      
+    }
+
     setTodos((todos) => [
       ...todos,
       {

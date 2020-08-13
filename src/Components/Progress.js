@@ -11,7 +11,7 @@ const Progressbar = styled.div`
   border-radius: 10px;
   border: 5px solid white;
   z-index: 100;
-  transition: ease 1s;
+  transition: ease 0.5s;
   box-shadow: 10px 10px 30px #666666, -10px -10px 30px #ffffff;
 
 `;
@@ -39,7 +39,7 @@ export const Progress = ({ todos, completed }) => {
 
   const finished = () => {
     if (progress() === 80) {
-      return "5px solid limeGreen";
+      return "5px solid #39ff14";
     }
   };
 
